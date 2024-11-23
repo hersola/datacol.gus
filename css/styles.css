@@ -25,6 +25,7 @@ body {
     margin: 120px 0 20px 0;  /* Ajuste del margen superior para la separación */
     overflow-y: auto;
     max-height: calc(100vh - 150px);  /* Espacio para header y footer */
+    padding: 0 10px;  /* Para evitar que los logos se peguen a los bordes */
 }
 .logo {
     margin: 10px;
@@ -59,3 +60,20 @@ body {
     bottom: 0;
 }
 
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 160px; /* Más espacio en la parte superior para el encabezado en dispositivos móviles */
+        max-height: calc(100vh - 180px);  /* Ajuste dinámico para dispositivos móviles */
+    }
+    .logo {
+        width: 120px;  /* Hacer los logos más pequeños en pantallas pequeñas */
+        height: 120px;
+    }
+    .header {
+        position: relative; /* Cambiar la posición para evitar solapamientos */
+    }
+    .footer {
+        position: relative;  /* Evitar que el footer se fije en dispositivos móviles */
+    }
+}
