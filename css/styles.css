@@ -63,11 +63,11 @@ body {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     .container {
-        margin-top: 120px; /* Menor margen superior */
+        margin-top: 140px; /* Menor margen superior */
         max-height: calc(100vh - 170px);  /* Se asegura de evitar solapamientos */
     }
     .logo {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
     }
 }
