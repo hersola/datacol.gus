@@ -63,17 +63,17 @@ body {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     .container {
-        margin-top: 160px; /* Más espacio en la parte superior para el encabezado en dispositivos móviles */
+        margin-top: 140px; /* Más espacio en la parte superior para el encabezado en dispositivos móviles */
         max-height: calc(100vh - 180px);  /* Ajuste dinámico para dispositivos móviles */
     }
     .logo {
         width: 120px;  /* Hacer los logos más pequeños en pantallas pequeñas */
         height: 120px;
     }
-    .header {
-        position: relative; /* Cambiar la posición para evitar solapamientos */
-    }
-    .footer {
-        position: relative;  /* Evitar que el footer se fije en dispositivos móviles */
-    }
+    /*.header {
+    /*    position: relative; /* Cambiar la posición para evitar solapamientos */
+    /*}
+    /*.footer {
+    /*    position: relative;  /* Evitar que el footer se fije en dispositivos móviles */
+    /*}
 }
