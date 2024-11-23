@@ -22,10 +22,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 120px 0 20px 0;  /* Ajuste del margen superior para la separación */
+    margin-top: 100px; /* Menor separación para dispositivos móviles */
     overflow-y: auto;
-    max-height: calc(100vh - 150px);  /* Espacio para header y footer */
-    padding: 0 10px;  /* Para evitar que los logos se peguen a los bordes */
+    padding: 0 10px;
+    max-height: calc(100vh - 170px);  /* Espacio para header y footer */
 }
 .logo {
     margin: 10px;
@@ -40,8 +40,8 @@ body {
     align-items: center;
     justify-content: center;
     transition: transform 0.2s;
-    text-decoration: none;  /* Evita subrayado */
-    color: inherit;  /* Mantiene el color del texto */
+    text-decoration: none;
+    color: inherit;
 }
 .logo img {
     max-width: 100%;
@@ -56,26 +56,18 @@ body {
     padding: 10px;
     text-align: center;
     width: 100%;
-    position: fixed;
+    position: fixed; /* Se mantiene fijo en dispositivos móviles */
     bottom: 0;
 }
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     .container {
-        margin-top: 160px; /* Más espacio en la parte superior para el encabezado en dispositivos móviles */
-        max-height: calc(100vh - 180px);  /* Ajuste dinámico para dispositivos móviles */
+        margin-top: 120px; /* Menor margen superior */
+        max-height: calc(100vh - 170px);  /* Se asegura de evitar solapamientos */
     }
     .logo {
-        width: 120px;  /* Hacer los logos más pequeños en pantallas pequeñas */
+        width: 120px;
         height: 120px;
     }
-    .header {
-        position: relative; /* Cambiar la posición para evitar solapamientos */
-    }
-    .footer {
-        position: relative;  /* Evitar que el footer se fije en dispositivos móviles */
-    }
 }
-
-
