@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px; /* Menor separación para dispositivos móviles */
+    margin-top: 170px; /* Menor separación para dispositivos móviles */
     overflow-y: auto;
     padding: 0 10px;
     max-height: calc(100vh - 170px);  /* Espacio para header y footer */
@@ -63,7 +63,7 @@ body {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     .container {
-        margin-top: 140px; /* Menor margen superior */
+        margin-top: 240px; /* Menor margen superior */
         max-height: calc(100vh - 170px);  /* Se asegura de evitar solapamientos */
     }
     .logo {
